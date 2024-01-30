@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import { View,Text } from 'react-native';
 
 // formik
 import { Formik } from 'formik';
@@ -20,6 +20,8 @@ import {
     StyledTextInput,
     RightIcon,
     Colors,
+    StyledButton,
+    ButtonText,
 } from './../components/styles'
 
 //colors
@@ -32,16 +34,16 @@ const Login = ()=>{
             <InnerContainer>
                 <PageLogo resizeMode = 'cover' source={require('./../assets/paws.png')}/>
                 <PageTitle>Furever</PageTitle>
-                <SubTitle>Account Login</SubTitle>
+                <SubTitle>Account Register</SubTitle>
                 <Formik
                   initialValues={{email: '', password: ''}}
                   onSubmit={(values)=>{console.log(values);}}
                 >
                   {({handleChange, handleBlur, handleSubmit, values})=>(<StyledFormArea>
                     <MyTextInput 
-                        label = 'Email Address'
+                        label = 'Your Email Address'
                         icon = 'mail'
-                        placeholder ='jamesjoy13579@gmail.com'
+                        placeholder ='abcdefg@gmail.com'
                         placeholderTextColor = {holderwords}
                         onChangeText = {handleChange('email')}
                         onBlur = {handleBlur('email')}
@@ -49,18 +51,53 @@ const Login = ()=>{
                         keyboardType = 'email-address'
                     />
                     <MyTextInput 
-                        label = 'Password'
+                        label = 'Your Password'
                         icon = 'lock'
-                        placeholder ='************'
+                        placeholder ='password'
+                        placeholderTextColor = {holderwords}
+                        onChangeText = {handleChange('password')}
+                        onBlur = {handleBlur('password')}
+                        value = {values.password}
+                        keyboardType = 'email-address'
+                        
+                    />
+                    <MyTextInput 
+                        label = 'Confirm Your Password'
+                        icon = 'lock'
+                        placeholder ='password'
                         placeholderTextColor = {holderwords}
                         onChangeText = {handleChange('password')}
                         onBlur = {handleBlur('password')}
                         value = {values.password}
                         keyboardType = 'email-address'
                     />
+
+                  
+
                     
                   </StyledFormArea>)}
+
+                    
                 </Formik>
+                <View style={{ flex: 1, flexDirection: 'row' }}>
+
+                <View style={{ flex: 1, paddingRight: 5 }}>
+                    <StyledButton 
+                    onPress={() => console.log('Button Pressed')}      
+
+                        
+                    />
+                    
+                </View>
+
+                <View style={{ flex: 1, paddingLeft: 5 }}>
+                    <StyledButton 
+                    onPress={() => console.log('Button Pressed')}          
+                    ButtonText = "gred"              
+                    />
+                    
+                </View>
+                </View>
             </InnerContainer>
         </StyledContainer>
 
