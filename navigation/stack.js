@@ -5,6 +5,7 @@ import Register from '../screens/register';
 import PostScreen from '../screens/postscreen';
 import Setting from '../screens/usersetting';
 import Adoptformik from '../screens/adoption';
+import Adoptformik2 from '../screens/adoptiontwo';
 import Report from '../screens/report';
 import CandidateScreen from '../screens/candidatescreen';
 import RefundPreviewScreen from '../screens/refund-preview-screen';
@@ -31,7 +32,7 @@ import { HomeTab } from './bottom-tab';
 const Stack = createStackNavigator();
 
 export const InitialStack = ()=>{
-    
+    const navigation = useNavigation();
     return(
         <Stack.Navigator screenOptions={navOptions}>
             <Stack.Screen name = "Welcome" component ={Welcome} options={{headerShown:false}}/>
@@ -49,6 +50,7 @@ export const InitialStack = ()=>{
             <Stack.Screen name = "Tinder" component={TinderScreen} options={TinderNavOption(navigation)}/>
             <Stack.Screen name = "UserLike" component={UserLikeScreen}/>
             <Stack.Screen name = "HomeTab" component={HomeTab} options={TinderNavOption(navigation)}/>
+            <Stack.Screen name='Adoptformik2' component={Adoptformik2}/> 
         </Stack.Navigator>
     )
 }
