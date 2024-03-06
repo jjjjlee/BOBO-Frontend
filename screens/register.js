@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, StyleSheet } from 'react-native';
 
+
 // formik
 import { Formik } from 'formik';
 
@@ -38,6 +39,10 @@ const {brand, darklight,holderwords, primary, orange} = Colors;
 
 const Register = ()=>{
     const navigation = useNavigation();
+
+    
+
+
     return (
       <ScrollView style={{flex:1}}>
 

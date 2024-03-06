@@ -35,7 +35,7 @@ const Reporttest = ()=>{
           return;
         }
       }
-  
+
       const result = await ImagePicker.launchImageLibraryAsync({
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
         allowsEditing: true,
@@ -81,7 +81,7 @@ const Reporttest = ()=>{
                     
                   
                     <View style={{ flex: 1, justifyContent: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)'}}>
-                        <View style={{ width:'100%', height:'10%',backgroundColor:orange,flexDirection:'row',justifyContent:'center',flexDirection:'row',borderTopLeftRadius:30,borderTopRightRadius:30,top:'30%'}}
+                        <View style={{ width:'100%', height:'10%',backgroundColor:orange,flexDirection:'row',justifyContent:'center',flexDirection:'row',borderTopLeftRadius:30,borderTopRightRadius:30,top:'31%'}}
                             >
                                                                                       
                                                                                     
@@ -125,8 +125,8 @@ const Reporttest = ()=>{
                             
                             <View style={{ width: '100%', height: 1, borderBottomWidth: 1, borderBottomColor: '#787878', borderStyle: 'dashed' ,top:'6%'}} />
 
-                            <Text style={{top:'9%',fontSize:16,color:holderwords,left:'35%'}}>飼養上遇到問題嗎</Text>
-                            <TouchableOpacity onPress={handleOpenModal2} style={{ padding: 10, backgroundColor:'#787878', left:'73%',alignItems: 'center', borderRadius: 20 ,width:100,top:'3%'}}>
+                            <Text style={{top:'9%',fontSize:16,color:holderwords,left:'30%'}}>飼養上遇到問題嗎</Text>
+                            <TouchableOpacity onPress={handleOpenModal2} style={{ padding: 10, backgroundColor:'#787878', left:'73%',alignItems: 'center', borderRadius: 20 ,width:100,top:'2.5%'}}>
                                 <Text style={{color:white}}>我要諮詢</Text>
                             </TouchableOpacity>
 
@@ -144,7 +144,7 @@ const Reporttest = ()=>{
                     >
                     <TouchableWithoutFeedback onPress={handlePressOutside}>
                     <View style={{ flex: 1, justifyContent: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)'}}>
-                        <View style={{ width:'100%', height:'8%',backgroundColor:orange,flexDirection:'row',justifyContent:'center',flexDirection:'row',borderTopLeftRadius:30,borderTopRightRadius:30,top:'43%'}}
+                        <View style={{ width:'100%', height:'8%',backgroundColor:orange,flexDirection:'row',justifyContent:'center',flexDirection:'row',borderTopLeftRadius:30,borderTopRightRadius:30,top:'45%'}}
                             >
                                                                                       
                                                                                     
